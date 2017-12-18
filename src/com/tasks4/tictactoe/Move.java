@@ -5,6 +5,12 @@ public class Move {
     private int y;
     private ActionFigure figure;
 
+    Move(int x, int y, ActionFigure figure) {
+        this.x = x;
+        this.y = y;
+        this.figure = figure;
+    }
+
     public int getX() {
         return x;
     }

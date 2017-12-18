@@ -46,6 +46,7 @@ public class TheGame {
 				 * якщо хід був виграшним то потрібно завершити гру.
 				 * Сигналом до завершення гри буде переривання основного циклу гри
 				 */
+				System.out.println("NOUGHT IS WIN");
                 break;
             }
 
@@ -60,6 +61,7 @@ public class TheGame {
             referee.put(move, board);
             board.print();
             if (referee.isWin(move, board)) {
+				System.out.println("CROSS IS WIN");
                 break;
             }
         }
